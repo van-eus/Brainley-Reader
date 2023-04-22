@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32&times;32" href="lo.jpg">
+    <title>Brainlyreader | SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="novlsign.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition:1s ease ;
+}
+body{
+    
+    background-size: cover;
+    background-attachment: fixed;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffd6d6; 
+}
+
+.box{
+    
+    width: 470px;
+    height: 750px;
+    left: calc(50% 175px);
+    top: calc(50% - 250px);
+    padding-top: 45px;
+    transform-style: preserve-3d;
+    background-color: white;
+    box-shadow: -3px -3px 25px rgb(232, 107, 167),
+    inset -3px -3px 15px rgb(233, 127, 178),
+    inset -3px -3px 15px rgb(202, 118, 159);
+}
+.box div{
+    width: 470px;
+    height: 750px;
+}
+
+.box div:nth-child(5){
+    height: 350px;
+   
+} 
+/* .container{
+    padding: 40px;
+    border-radius: 15px;
+
+   
+} */
+
+.container .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.container .form h2{
+    color:black;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+}
+.container .form .inputBox{
+    position: relative;
+    width: 300px;
+}
+.container .form .inputBox input{
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    background: rgb(226, 204, 240);
+    color: black;
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgb(212, 156, 156),
+    5px 5px 15px rgb(190, 116, 116);
+    transition: 0.5s;
+    outline: none;
+}
+.container .form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color: rgb(37, 35, 35);
+
+}
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span
+{
+    color: black;
+    border: 1px solid black;
+    background: rgb(226, 204, 240);
+    font-size: 0.8em;
+    padding: 0 8px;
+    transform: translateX(30px) translateY(-8px);
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+
+
+}
+
+
+
+.container .form .inputBox input:valid,
+.container .form .inputBox input:focus
+{
+    border: 1px solid rgb(200, 118, 125);
+}
+
+.container .form .inputBox i{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 25px;
+    padding: 2px 0;
+    padding-right: 8px;
+    color: black;
+    
+
+}
+.container .form .inputBox input [type="submit"]{
+    background: rgb(200, 118, 125);
+    color: black;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: -3px -3px 25px rgb(253, 98, 127),
+    inset -3px -3px 15px rgb(253, 98, 127),
+    inset -3px -3px 15px rgb(253, 98, 127);
+
+}
+.container .form p{
+    color: black;
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.container .form p a{
+    font-weight: 500;
+    color: black;
+    font-size: 17px;
+}
+#sbmt:hover{
+    background-color: tomato;
+
+}
+.info{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    padding: 39px;
+    color: black;
+ }
+</style>
+</head>
+<body>
+    <form action="/sign" method="POST">
+    <div class="container">
+        <div class="box">
+        <div class="form">
+            <h2>Sign Up</h2>
+            <div class="inputBox">
+                <input type="text"  name="fnames" required="required">
+                <i class="fa-solid fa-user"></i>
+                <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="username" required="required">
+                <i class="fa-solid fa-user"></i>
+                <span>Username</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" name="email" required="required">
+                <i class="fa-solid fa-envelope"></i>
+                <span>email address</span>
+            </div>
+            <div class="inputBox">
+                <input type="number" name="dob" required="required">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Birthdate</span>  
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password1" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Create Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password2" required="required">
+                <i class="fa-solid fa-lock"></i>
+                <span>Confirm Password</span>
+            </div>
+            <div class="inputBox" >
+                <input type="submit" value="Create Account" name="account" id="sbmt">
+            </div>
+            <div class="info">By signing-in your agree to Bnovel's  <span><a href="https://www.amazon.co.uk/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=1040616">Conditions of Use & Sale.</a></span>Please see our <span><a href="https://www.amazon.co.uk/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=1040616">Privacy Notice</a></span>,our 
+                <span><a href="https://www.amazon.co.uk/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=1040616">Privacy Notice</a></span> and our <span><a href="https://www.amazon.co.uk/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=1040616">Interest-Based Ads Notice.</a></span></div>
+            <h4>Already a member ? <a href="C:/Users/Vanessa/Documents/vanessa/coding_lf/vital-flex/vital-flex.html"
+                class="login">Log in</a></h4>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>
+
+

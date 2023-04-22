@@ -1,0 +1,278 @@
+body{
+    
+    margin: 0;
+}
+header {
+    position: fixed;
+    margin-top:0 ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 0.5em 1em;
+    z-index: 1000;
+   background: #ffd6d6; 
+    color: #fff;
+  }
+  header button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  aside {
+    width: 7%;
+    height: 70vh;
+    background-color: #eee;
+    float: right;
+    padding: 1em;
+    overflow: hidden;
+  }
+  aside button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    display: none;
+  }
+  aside:hover button {
+    display: block;
+  }
+  main {
+    display: flex;
+  }
+  main .left-division {
+    width: 45.5%;
+    height: 70vh;
+    padding: 1em;
+  }
+  main .right-division {
+    width: 45.5%;
+    height: 70vh;
+    padding: 1em;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    clear: both;
+  }
+  footer a {
+    color: #fff;
+  }
+#MenuItems li{
+    display: inline-block;
+       margin-right: 20px;
+       list-style: none;
+       bottom: -40px;  
+    }
+    #MenuItems li a{
+        text-decoration: none;
+        color: #393636;
+        font-size: 20px;
+        padding-right:35px;
+
+     }
+     .only{
+        padding-left: 120px;
+     }
+     #MenuItems li a span{
+        font-size: 35px;
+        font-weight: 40px;
+        color: tomato;
+
+     }
+    
+
+/*---footer---*/
+
+.footer{
+    background: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-left: 0px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 90px;
+    display: inline-block;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+    }
+    .app-logo img{
+        width: 140px;
+    }
+
+    .footer hr{
+        border: none;
+        background: #b5b5b5;
+        height: 3px;
+        margin: 20px 0;
+    }
+    
+    .Copyright{
+        text-align: center;
+    }
+    .menu-icon{
+        width: 28px;
+        margin-left: 20px;
+        display: none;
+    }
+ 
+    @media only screen and (max-width: 800px){}
+
+
+    .photos,.photo1,.photo2,.photo3{
+    
+        height: 300px;
+        width: 100%;
+        left: 0;
+        
+    }
+   #pic{
+        width: 120%;
+        position: absolute;
+        left: 50%;
+       
+        top: 50%;
+        padding-top: 14%;
+        transform: translate(-50%, -50%);
+        animation: zoom-out 3s linear infinite;
+    }
+    @keyframes zoom-out{
+        100%{
+            width: 100%;
+        }
+    }
+
+    .photos{
+        animation: slide1 12s linear infinite;
+        
+    }
+    .photo1{
+        animation: slide2 12s linear infinite;
+        
+    }
+    .photo2{
+        animation: slide3 12s linear infinite;
+    }
+    .photo3{
+        animation: slide4 12s linear infinite;
+        
+    }
+      
+
+    @keyframes slide1{
+        0%{
+            visibility: visible;
+        }
+        25%{
+           visibility: hidden; 
+        }
+        50%{
+            visibility: hidden; 
+         }
+         75%{
+            visibility: hidden; 
+         }
+         100%{
+            visibility: visible; 
+         }
+    
+    }
+    
+    
+    @keyframes slide2{
+        0%{
+            visibility: hidden;
+        }
+        25%{
+           visibility: hidden; 
+        }
+        50%{
+            visibility: visible; 
+         }
+         75%{
+            visibility: hidden; 
+         }
+         100%{
+            visibility: hidden; 
+         }
+    
+    }
+    @keyframes slide3{
+        0%{
+            visibility: hidden;
+        }
+        25%{
+           visibility: hidden; 
+        }
+        50%{
+            visibility: hidden; 
+         }
+         75%{
+            visibility: visible; 
+         }
+         100%{
+            visibility: hidden; 
+         }
+    
+    }
+    @keyframes slide4{
+        0%{
+            visibility: hidden;
+        }
+        25%{
+           visibility: hidden; 
+        }
+        50%{
+            visibility: hidden; 
+         }
+         75%{
+            visibility: hidden; 
+         }
+         100%{
+            visibility: visible; 
+         }
+    
+    }
+   
